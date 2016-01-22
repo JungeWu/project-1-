@@ -34,8 +34,8 @@ diamonds <- get(load(file = url("https://github.com/EconomiCurtis/econ294_2015/r
                 JungeWuAssignment2$s2e <-median(NHIS_2007_TSV[["weight"]])
                 #the median is 175
                 weights <- NHIS_2007_TSV$weight
-                hist(graph, right=FALSE)
-                table(graph) #draw a histogram with the weights
+                hist(weights, right=FALSE)
+                table(weights) #draw a histogram with the weights
                 NHIS_2007_TSV$weightnew<- ifelse(test = NHIS_2007_TSV$weight<996 | NHIS_2007_TSV$weight>999,
                                                  yes = NHIS_2007_TSV$weight,
                                                  no = 0)#create a new column setting these weight observations to NA.
