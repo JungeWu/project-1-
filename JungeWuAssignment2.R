@@ -8,7 +8,10 @@ JungeWuAssignment2 <- list(
   studentID = 1505086
 )
 #problem 1#
-diamonds <- get(load(file = url("https://github.com/EconomiCurtis/econ294_2015/raw/master/data/diamonds.CSV"))
+install.packages("repmis")
+library("repmis")
+install.packages("source_data")
+diamonds<-source_data("https://raw.githubusercontent.com/EconomiCurtis/econ294_2015/master/data/diamonds.CSV")
                 View(diamonds)
                 JungeWuAssignment2$s1a <- nrow(diamonds) #to see how many observations
                 #there are 7 observations
