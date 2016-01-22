@@ -68,7 +68,7 @@ diamonds<-source_data("https://raw.githubusercontent.com/EconomiCurtis/econ294_2
                 arr3 <- arr[,,3]
                 JungeWuAssignment2$s3c <- arr2[,1]#to extract the first column from the second matrix of arr
                 #"j" "k" "l"
-                JungeWuAssignment2$s3d <- c(arr1[,2],arr2[,2],arr3[,2])#to extract the middle values from each of the three matrices in arr 
+                JungeWuAssignment2$s3d <- c(arr1[2,2],arr2[2,2],arr3[2,2])#to extract the middle values from each of the three matrices in arr 
                 #"d" "e" "f" "m" "n" "o" "v" "w" "x"
                 JungeWuAssignment2$s3e <- paste(arr[1,1,2],arr[3,1,3],arr[2,2,2],sep = "")#spell the first three letters of your first name 
                 #"jun"
